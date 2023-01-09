@@ -42,7 +42,7 @@ string[] DetectNewArrayWithlenghtOfWordlessThreeChars(string[] arr)
     {
         if (arr[i].Length <= 3)
         {
-            arrB[count]=arr[i];
+            arrB[count] = arr[i];
 
             count++;
         }
