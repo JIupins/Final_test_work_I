@@ -18,7 +18,7 @@ string[] CreateArray(int num)
     return arrA;
 }
 
-void WriteArray(string phrase, int num, string[] arr)
+void WriteArray(string phrase, string[] arr)
 {
     Console.WriteLine();
 
@@ -58,8 +58,8 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 string[] array = CreateArray(number);
 
-WriteArray($"Сгенерирован произвольный массив из {number} элементов: ", number, array);
+WriteArray($"Сгенерирован произвольный массив из {number} элементов: ", array);
 
 array = DetectNewArrayWithlenghtOfWordlessThreeChars(array);
 
-WriteArray($"Сформирован новый массив из {array.Length} элементов, длинна элементов в котором не превышает 3-х символов: ", array.Length, array);
+WriteArray($"Сформирован новый массив из {array.Length} элементов, длинна элементов в котором не превышает 3-х символов: ", array);
